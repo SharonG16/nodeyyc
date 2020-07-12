@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+        ul {
+            color: black
+        }
+
+        ol {
+            color: blue;
+        }
+
+        ul.a {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+
+        }
+
+
+        ul.b {
+            list-style-type: upper-roman;
+        }
+
+        .b1 {
+            font-size: 0.5em;
+        }
+
+        ul.c {
+            list-style: url("animated-arrow.gif");
+        }
+
+        ol li:nth-child(even) {
+            color: rgb(146, 4, 28);
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: red;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        div {
+            margin-left: 10px;
+            bottom: 0;
+            left: 0;
+        }
+        a.ex1:visited,
+        a.ex1:link {
+            text-decoration: none;
+        }
+
+        a.ex1:hover,
+        a.ex1:active {
+            text-decoration: underline;
+        }
+
+        a.ex2:visited,
+        a.ex2:link {
+            text-decoration: none;
+        }
+
+        a.ex2:hover,
+        a.ex2:active {
+            text-decoration: underline;
+        }
+
+        a.ex3:visited,
+        a.ex3:link {
+            text-decoration: none;
+        }
+
+        a.ex3:hover,
+        a.ex3:active {
+            text-decoration: underline;
+        }
+
+        a.ex4:visited,
+        a.ex4:link {
+            text-decoration: none;
+        }
+
+        a.ex4:hover,
+        a.ex4:active {
+            text-decoration: underline;
+        }
+
+        a.ex5:visited,
+        a.ex5:link {
+            text-decoration: none;
+        }
+
+        a.ex5:hover,
+        a.ex5:active {
+            text-decoration: underline;
+        }
+
+       
+
+
+    </style>
+</head>
+
+<body>
+
+    <ul class="a">
+        <div class="dropdown">
+            <li><a href="#ItemOne" target="_blank">Item One</a></li>
+            <div class="dropdown-content">
+                <li>List One</li>
+                <li>List Two</li>
+                <li>List Three</li>
+            </div>
+            <li>Item Two</a></li>
+            <li>Item Three</a></li>
+            <li>Item Four</a></li>
+            <li>Item Five</a></li>
+            <li>Item Six</a></li>
+            <li>Item Seven</li>
+            <li>Item Eight</li>
+    </ul>
+
+    <ul class="b">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+        <li>Item Four</li>
+        <li>Item Five</li>
+        <li>Item Six</li>
+        <li>Item Seven</li>
+        <li>Item Eight</li>
+            
+            <ul class="b1">
+                <li>Item One</li>
+                <li>Item Two</li>
+                <li>Item Three</li>
+                <li>Item Four</li>
+                <li>Item Five</li>
+                <li>Item Six</li>
+                <li>Item Seven</li>
+                <li>Item Eight</li>
+            </ul>
+    </ul>
+
+    <ul class="c">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+        <li>Item Four</li>
+        <li>Item Five</li>
+        <li>Item Six</li>
+        <li>Item Seven</li>
+        <li>Item Eight</li>
+    </ul>
+
+    <ol class="d">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+        <li>Item Four</li>
+        <li>Item Five</li>
+        <li>Item Six</li>
+        <li>Item Seven</li>
+        <li>Item Eight</li>
+    </ol>
+    <div>
+        <ol class="e">
+            <li><a class="ex1" href="default.asp" target="_blank">Item One</a></li>
+            <li><a class="ex2" href="default.asp" target="_blank">Item Two</a></li>
+            <li><a class="ex3" href="default.asp" target="_blank">Item Three</a></li>
+            <li><a class="ex4" href="default.asp" target="_blank">Item Four</a></li>
+            <li><a class="ex5" href="default.asp" target="_blank">Item Five</a></li>
+    </div>
+
+</body>
+
+</html>
